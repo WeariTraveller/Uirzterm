@@ -3,18 +3,18 @@ local wezterm, config = (require "configer")()
 config.win32_system_backdrop = "Acrylic"
 local winMenu = {
   {
-    label = 'PowerShell',
-    args = { 'pwsh' },
+    label = "PowerShell",
+    args = { "pwsh" },
   },
   {
-    label = 'Cmd',
-    args = { 'cmd' },
+    label = "Cmd",
+    args = { "cmd" },
   },
 }
 for _, i in ipairs(winMenu) do
   table.insert(config.launch_menu, i)
 end
-config.default_prog = { 'pwsh' }
+config.default_prog = { "pwsh" }
 
 -- Find installed visual studio version(s) and add their compilation
 -- environment command prompts to the menu
