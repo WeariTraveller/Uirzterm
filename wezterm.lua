@@ -1,6 +1,6 @@
 local wezterm, config, target = (require "configer")()
 
-require "prefer"
+require "lua.prefer"
 if target:find("windows") ~= nil then
   require "windows"
 elseif target:find("darwin") ~= nil then
@@ -8,8 +8,8 @@ elseif target:find("darwin") ~= nil then
 elseif target:find("linux") ~= nil then
   require "liunx"
 end
-require "ui"
-require "keymaps"
-require "plugins"
+require "lua.ui"
+require "lua.keymaps"
+require "lua.plugins"
 
 return config

@@ -19,7 +19,7 @@ config.font_size = 12
 config.font = wezterm.font_with_fallback({
   "Sarasa Term SC",
 })
-require "themes"
+require "lua.themes"
 config.color_scheme = "Tokyo Day Soft Edited"
 config.window_background_opacity = 0.3
 config.background = {
