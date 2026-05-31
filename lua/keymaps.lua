@@ -1,4 +1,3 @@
-local wezterm, config = (require "configer")()
 local act = wezterm.action
 local MOD = "CTRL|ALT"
 

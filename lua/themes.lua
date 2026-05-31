@@ -1,5 +1,3 @@
-local wezterm, config = (require "configer")()
-
 config.color_schemes = {
   -- Origin from https://gist.github.com/lr580/7ec84df732e0946f03504d7fe02387c0#tokyo-day-soft
   ["Tokyo Day Soft Edited"] = {

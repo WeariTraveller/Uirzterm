@@ -1,4 +1,3 @@
-local wezterm, config = (require "configer")()
 local plugReq = function(link, isShort)
   isShort = isShort or true
   if isShort then return wezterm.plugin.require("https://github.com/" .. link) end

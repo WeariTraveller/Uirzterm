@@ -1,4 +1,6 @@
-local wezterm, config, target = (require "configer")()
+_G.wezterm = require "wezterm"
+_G.config = wezterm.config_builder()
+_G.target = wezterm.target_triple
 
 require "lua.prefer"
 require "lua.ui"

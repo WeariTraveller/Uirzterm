@@ -1,5 +1,3 @@
-local wezterm, config = (require "configer")()
-
 config.win32_system_backdrop = "Acrylic"
 local winMenu = {
   {
