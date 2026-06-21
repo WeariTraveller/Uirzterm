@@ -7,6 +7,7 @@ config.color_schemes = {
     cursor_bg = "#A9B1D6", --'#565F89',
     cursor_fg = "#E1E2E7",
     cursor_border = "#A9B1D6", --'#565F89',
+    scrollbar_thumb = "#AAAAAA", -- Added
 
     selection_bg = "#C0CAF5",
     selection_fg = "#565F89",
