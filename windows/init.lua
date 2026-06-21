@@ -15,14 +15,6 @@ end
 config.term = nil
 config.default_prog = { "pwsh" }
 
-config.wsl_domains = {
-  {
-    name = 'WSL:Arch',
-    distribution = 'archlinux',
-    default_cwd = "~"
-  },
-}
-
 -- Find installed visual studio version(s) and add their compilation
 -- environment command prompts to the menu
 --[[for _, vsvers in
