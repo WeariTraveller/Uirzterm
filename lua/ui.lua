@@ -22,7 +22,9 @@ config.color_scheme = "Tokyo Day Soft Edited"
 config.window_background_opacity = 0.3
 config.background = {
   {
-    source = { File = wezterm.config_dir .. "/background.png" },
+    source = {
+      File = os.getenv("wzBgPath") or (wezterm.config_dir .. "/images/" .. (os.getenv("wzBg") or "aloneInRain.png")),
+    },
     opacity = 0.72,
     hsb = {
       brightness = 0.63,
