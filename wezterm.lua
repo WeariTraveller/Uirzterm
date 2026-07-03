@@ -11,7 +11,7 @@ if target:find("windows") ~= nil then
 elseif target:find("darwin") ~= nil then
   require "darwin"
 elseif target:find("linux") ~= nil then
-  require "liunx"
+  require "linux"
 end
 
 return config
