@@ -9,7 +9,6 @@ config.tab_max_width = 25
 config.harfbuzz_features = { "calt=1", "clig=1", "liga=1" }
 config.max_fps = 60
 config.animation_fps = 60
--- (at least on Windows) it'll influence how non-title behaves
 config.front_end = "WebGpu"
 
 -- Window

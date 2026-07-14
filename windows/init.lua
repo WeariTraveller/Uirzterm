@@ -1,3 +1,5 @@
+config.front_end = "OpenGL"
+config.window_decorations = "TITLE|RESIZE"
 config.win32_system_backdrop = "Acrylic"
 local winMenu = {
   {
