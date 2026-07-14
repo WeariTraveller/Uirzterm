@@ -19,25 +19,33 @@ config.font = wezterm.font_with_fallback({
 })
 require "lua.themes"
 config.color_scheme = "Tokyo Day Soft Edited"
-config.window_background_opacity = 0.3
+config.window_background_opacity = 0.33
+config.colors = {
+  -- the bg of One Half Dark
+  background = "#282c34",
+}
 config.background = {
+  {
+    source = { Color = "#282c34" },
+    opacity = 0.55,
+    hsb = {
+      brightness = 1.0,
+      saturation = 1.0,
+    },
+    width = "100%",
+    height = "100%",
+  },
   {
     source = {
       File = os.getenv("wzBgPath") or (wezterm.config_dir .. "/images/" .. (os.getenv("wzBg") or "aloneInRain.png")),
     },
-    opacity = 0.72,
+    opacity = 0.34,
     hsb = {
-      brightness = 0.63,
+      brightness = 1.0,
       saturation = 1.0,
     },
     horizontal_align = "Center",
     vertical_align = "Middle",
-  },
-  {
-    source = { Color = "#05080c" },
-    opacity = 0.29,
-    width = "100%",
-    height = "100%",
   },
 }
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
