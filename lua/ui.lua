@@ -79,3 +79,11 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
   } end
   return " " .. title .. " "
 end)
+wezterm.on(
+  "update-right-status",
+  function(window, pane)
+    window:set_right_status(wezterm.format {
+      { Text = "Cmdpicker<Alt-,><space>  REPL<Shit-Ctrl-L>" },
+    })
+  end
+)
