@@ -1,6 +1,6 @@
 config.front_end = "OpenGL"
 config.window_decorations = "TITLE|RESIZE"
-config.win32_system_backdrop = "Acrylic"
+wezterm.log_info "Blur effects are powered by Windhawk (windhawk.net)'s mod Translucent Windows"
 local winMenu = {
   {
     label = "PowerShell",
