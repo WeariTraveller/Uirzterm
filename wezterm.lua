@@ -2,10 +2,12 @@ _G.wezterm = require "wezterm"
 _G.config = wezterm.config_builder()
 _G.target = wezterm.target_triple
 
-require "lua.prefer"
-require "lua.ui"
-require "lua.keymaps"
-require "lua.plugins"
+package.path = wezterm.config_dir .. "/lua/?.lua;" .. wezterm.config_dir .. "/lua/?/init.lua;" .. package.path
+
+require "prefer"
+require "ui"
+require "keymaps"
+require "plugins"
 if target:find("windows") ~= nil then
   require "windows"
 elseif target:find("darwin") ~= nil then
